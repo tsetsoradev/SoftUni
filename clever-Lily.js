@@ -5,8 +5,6 @@ function Lily(input) {
     let sum = 0
     let present = 10
     let toy = 0
-
-
     for (let year = 1; year <= age; year++) {
         if (year % 2 != 0) {
             toy += 1
@@ -16,7 +14,6 @@ function Lily(input) {
             present += 10
             sum = sum - 1
         }
-
     }
     sum = sum + toy * toyPrice
     if (sum >= washerPrice) {
@@ -25,5 +22,4 @@ function Lily(input) {
         console.log(`No! ${(washerPrice - sum).toFixed(2)}`)
     }
 }
-
 Lily([4, 10, 6])
